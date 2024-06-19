@@ -1,0 +1,7 @@
+---
+- hosts: my_servers
+  become: true
+  tasks:
+    - name: Print OS info
+      ansible.buildin.package:
+        name: apache2
