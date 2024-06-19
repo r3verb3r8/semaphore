@@ -1,7 +1,10 @@
 ---
-- hosts: my_servers
-  become: true
+- name: My first play
+  hosts: home
   tasks:
-    - name: Print OS info
-      ansible.buildin.package:
-        name: apache2
+   - name: Ping my hosts
+     ansible.builtin.ping:
+
+   - name: Print message
+     ansible.builtin.debug:
+      msg: Hello world
